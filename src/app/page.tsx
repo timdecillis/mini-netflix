@@ -1,11 +1,27 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client'
+import { useEffect } from "react";
+const axios = require('axios');
+
 import '../styles/main.scss';
 
 export default function Home() {
+  const key = process.env.NEXT_PUBLIC_KEY;
+
+  const fetchData = async (apiKey: string) => {
+    try {
+      const response = await axios.get(`http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}&s=jaws`);
+      console.log('response:', response)
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  useEffect(() => {
+    fetchData(key || '');
+  }, [key]);
+
   return (
     <div>Welcome to Mini Netflix</div>
-
 
     // <main className={styles.main}>
     //   <div className={styles.description}>
