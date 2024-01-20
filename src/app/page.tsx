@@ -1,27 +1,12 @@
-'use client'
-import { useEffect } from "react";
-const axios = require('axios');
-
-import '../styles/main.scss';
+import "../styles/main.scss";
+import Movies from "./Movies";
 
 export default function Home() {
-  const key = process.env.NEXT_PUBLIC_KEY;
-
-  const fetchData = async (apiKey: string) => {
-    try {
-      const response = await axios.get(`http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}&s=jaws`);
-      console.log('response:', response)
-    } catch (err) {
-      console.log(err);
-    }
-  }
-
-  useEffect(() => {
-    fetchData(key || '');
-  }, [key]);
-
   return (
-    <div>Welcome to Mini Netflix</div>
+    <>
+      <h1>Welcome to Mini Netflix</h1>
+      <Movies />
+    </>
 
     // <main className={styles.main}>
     //   <div className={styles.description}>
