@@ -1,9 +1,24 @@
-import React from 'react'
+"use client";
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Search = () => {
-  return (
-    <div>Search</div>
-  )
-}
+  const [input, setInput] = useState("");
+  const router = useRouter();
 
-export default Search
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!input) return;
+    router.push()
+  };
+  return (
+    <form onSubmit={handleSubmit} >
+      <input
+      onChange={(e) => setInput(e.target.value)}
+      type="text" placeholder="Search..." />
+      <input disabled={!input} type="submit" />
+    </form>
+  );
+};
+
+export default Search;
