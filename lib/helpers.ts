@@ -1,5 +1,5 @@
 export const fetchMovies = async () => {
-  const key = process.env.NEXT_PUBLIC_KEY;
+  const key = process.env.API_KEY;
 
   try {
     const res = await fetch(

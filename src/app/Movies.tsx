@@ -14,20 +14,22 @@ const Movies = async () => {
   return (
     <>
       <h1>Movies</h1>
-      <ul>
+
         {movies.map((movie: Movie) => (
-          <li key={movie.imdbId}>
-            <h3>{movie.Title}</h3>
-            <Image
-              src={movie.Poster}
-              alt={`a poster for ${movie.Title}`}
-              width={300}
-              height={450}
-              layout="responsive"
-            ></Image>
-          </li>
+          <a key={movie.imdbId} href="/details">
+
+              <h3>{movie.Title}</h3>
+              <Image
+                src={movie.Poster}
+                alt={`a poster for ${movie.Title}`}
+                width={150}
+                height={225}
+                layout="responsive"
+              ></Image>
+
+          </a>
         ))}
-      </ul>
+
     </>
   );
 };
