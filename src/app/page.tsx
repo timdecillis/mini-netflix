@@ -1,5 +1,5 @@
 import "../styles/main.scss";
-import Movies from "./Movies";
+import Movies from "../components/Movies";
 
 export default function Home() {
   return (
