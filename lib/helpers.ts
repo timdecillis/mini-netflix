@@ -22,5 +22,5 @@ export const fetchDetails = async (id:string) => {
   if (!res.ok) {
     throw new Error("There was an error fetching the movie details");
   }
-  return data.Search;
+  return data;
 };

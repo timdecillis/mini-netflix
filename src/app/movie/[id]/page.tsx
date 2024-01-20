@@ -1,17 +1,19 @@
-import React from 'react'
+import React from "react";
+
+import Details from '../../../components/Details';
+import { fetchDetails } from "../../../../lib/helpers";
 
 interface MovieProps {
   params: {
-    id: string
-  }
+    id: string;
+  };
 }
 
-const Movie = ({params}: MovieProps) => {
-  console.log('PARAMS:', params.id)
+const Movie = async ({ params }: MovieProps) => {
+  const { id } = params;
+  const details = await fetchDetails(id);
 
-  return (
-    <div>Movie</div>
-  )
-}
+  return <Details details={details}/>;
+};
 
-export default Movie
+export default Movie;
