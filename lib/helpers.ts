@@ -1,9 +1,7 @@
-export const fetchMovies = async (term = 'terminator') => {
+export const fetchMovies = async (term: string = "terminator") => {
   const key = process.env.API_KEY;
 
-  const res = await fetch(
-    `http://www.omdbapi.com/?s=${term}&apikey=${key}`
-  );
+  const res = await fetch(`http://www.omdbapi.com/?s=${term}&apikey=${key}`);
   const data = await res.json();
 
   if (!res.ok) {
@@ -11,12 +9,10 @@ export const fetchMovies = async (term = 'terminator') => {
   }
   return data.Search;
 };
-export const fetchDetails = async (id:string) => {
+export const fetchDetails = async (id: string) => {
   const key = process.env.API_KEY;
 
-  const res = await fetch(
-    `http://www.omdbapi.com/?i=${id}&apikey=${key}`
-  );
+  const res = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=${key}`);
   const data = await res.json();
 
   if (!res.ok) {
