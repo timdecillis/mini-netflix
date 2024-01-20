@@ -24,7 +24,7 @@ const Movies = async () => {
                 alt={`a poster for ${movie.Title}`}
                 width={150}
                 height={225}
-                layout="responsive"
+                layout="fixed"
               ></Image>
 
           </a>
