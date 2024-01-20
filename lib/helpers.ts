@@ -8,6 +8,6 @@ export const fetchMovies = async () => {
     const data = await res.json();
     return data.Search;
   } catch (err) {
-    console.log("There was an error fetching the movies:", err);
+    throw new Error ("There was an error fetching the movies");
   }
 };
