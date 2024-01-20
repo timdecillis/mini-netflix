@@ -1,8 +1,8 @@
-export const fetchMovies = async () => {
+export const fetchMovies = async (term = 'terminator') => {
   const key = process.env.API_KEY;
 
   const res = await fetch(
-    `http://www.omdbapi.com/?s=terminator&apikey=${key}`
+    `http://www.omdbapi.com/?s=${term}&apikey=${key}`
   );
   const data = await res.json();
 

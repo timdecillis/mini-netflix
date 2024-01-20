@@ -9,7 +9,7 @@ const MovieCard = ({ movie }) => {
         alt={`a poster for ${movie.Title}`}
         width={150}
         height={225}
-        layout="fixed"
+        priority
       ></Image>
       <h3>{movie.Title}</h3>
     </a>
