@@ -1,4 +1,5 @@
 import React from "react";
+import { fetchMovies } from "../../lib/helpers";
 
 interface Movie {
   Title: string;
@@ -6,12 +7,8 @@ interface Movie {
 }
 
 const Movies = async () => {
-  const key = process.env.NEXT_PUBLIC_KEY;
-  const res = await fetch(
-    `http://www.omdbapi.com/?i=tt3896198&apikey=${key}&s=terminator`
-  );
-  const data = await res.json();
-  const movies: Movie[] = data.Search;
+
+  const movies: Movie[] = await fetchMovies();
 
   return (
     <>
