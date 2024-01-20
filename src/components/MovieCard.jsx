@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MovieCard = ({ movie }) => {
   return (
-    <a key={movie.imdbId} href="/details">
+    <a key={movie.imdbID} href={`/movie/${movie.imdbID}`}>
       <Image
         src={movie.Poster}
         alt={`a poster for ${movie.Title}`}
