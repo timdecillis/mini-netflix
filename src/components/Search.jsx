@@ -9,7 +9,7 @@ const Search = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!input) return;
-    router.push()
+    router.push(`/search/${input}`);
   };
   return (
     <form onSubmit={handleSubmit} >

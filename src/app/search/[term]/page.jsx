@@ -1,8 +1,10 @@
 import React from 'react'
+import Movies from '../../../components/Movies'
 
-const Results = () => {
+const Results = ({params}) => {
+  const {term} = params;
   return (
-    <div>Results</div>
+    <Movies term={term}/>
   )
 }
 

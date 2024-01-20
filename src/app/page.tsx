@@ -4,7 +4,7 @@ import Movies from "../components/Movies";
 export default function Home() {
   return (
     <>
-      <h1>Welcome to Mini Netflix</h1>
+      <h1>Welcome to (mini)Netflix</h1>
       <Movies />
     </>
 

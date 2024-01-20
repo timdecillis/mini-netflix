@@ -9,8 +9,9 @@ interface Movie {
   Poster: string;
 }
 
-const Movies = async () => {
-  const movies: Movie[] = await fetchMovies();
+const Movies = async ({term = 'terminator'}) => {
+
+  const movies: Movie[] = await fetchMovies(term);
 
   return (
     <>
