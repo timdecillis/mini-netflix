@@ -13,7 +13,7 @@ export const fetchMovies = async (term: string) => {
 export const fetchDetails = async (id: string) => {
   const key = process.env.API_KEY;
 
-  const res = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=${key}`);
+  const res = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=${key}&plot=full`);
   const data = await res.json();
 
   if (!res.ok) {

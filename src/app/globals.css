@@ -109,7 +109,7 @@ a {
 body {
   padding: 1rem;
   color: white;
-  background-color: rgb(189, 82, 127);
+  background-color: #f14e4c;
 }
 
 .header {
@@ -117,7 +117,12 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-left: 4%;
+  padding-bottom: 2%;
   position: relative;
+  border-color: #f2e7c9;
+  border-bottom-style: solid;
+  border-bottom-width: .1rem;
+  margin-bottom: 1rem;
 }
 
 .header-greeting {
@@ -129,6 +134,7 @@ body {
 
 .home-button {
   font-size: x-large;
+  color: white;
 }
 
 .logo-image {

@@ -1,7 +1,11 @@
+.details {
+  padding-top: 2%;
+}
+
 .movie-card {
-  color: black;
+  color: white;
   border-style: solid;
-  border-width: .1rem;
+  border-width: 0.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +15,7 @@
   height: 90.5%;
   width: 88%;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -22,10 +26,14 @@
 }
 
 .search-input {
+  height: 1.5rem;
   width: 20%;
+  border-width: 0.1rem;
+  border-color: black;
   border-top: none;
   border-left: none;
   border-right: none;
+  outline: none;
 }
 
 .search-form {
@@ -39,4 +47,3 @@
   width: 5%;
   min-width: 5rem;
 }
-
