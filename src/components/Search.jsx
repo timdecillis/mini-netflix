@@ -11,14 +11,14 @@ const Search = () => {
     router.push(`/search/${input}`);
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="search-form" onSubmit={handleSubmit}>
       <input
         className="search-input"
         onChange={(e) => setInput(e.target.value)}
         type="text"
         placeholder="Search..."
       />
-      <input disabled={!input} type="submit" />
+      <input className="search-submit" disabled={!input} type="submit" />
     </form>
   );
 };

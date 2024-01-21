@@ -6,6 +6,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 4%;
+  padding-right: 2%;
 }
 
 .home-button {
@@ -33,9 +35,19 @@ body {
 }
 
 .search-input {
-  width: 100%;
+  width: 20%;
   border-top: none;
   border-left: none;
   border-right: none;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-submit {
+  width: 5%;
+  min-width: 5rem;
 }
 
