@@ -8,14 +8,15 @@ const Search = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!input) return;
     router.push(`/search/${input}`);
   };
   return (
-    <form onSubmit={handleSubmit} >
+    <form onSubmit={handleSubmit}>
       <input
-      onChange={(e) => setInput(e.target.value)}
-      type="text" placeholder="Search..." />
+        onChange={(e) => setInput(e.target.value)}
+        type="text"
+        placeholder="Search..."
+      />
       <input disabled={!input} type="submit" />
     </form>
   );

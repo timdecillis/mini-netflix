@@ -5,9 +5,10 @@ export const fetchMovies = async (term: string) => {
   const data = await res.json();
 
   if (!res.ok) {
+
     throw new Error("There was an error fetching the movies");
   }
-  return data.Search;
+  return data.Search || [];
 };
 export const fetchDetails = async (id: string) => {
   const key = process.env.API_KEY;
@@ -18,5 +19,5 @@ export const fetchDetails = async (id: string) => {
   if (!res.ok) {
     throw new Error("There was an error fetching the movie details");
   }
-  return data;
+  return data || [];
 };

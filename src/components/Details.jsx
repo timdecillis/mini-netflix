@@ -1,12 +1,17 @@
 import Image from "next/image";
 import React from "react";
+import favicon from '../app/favicon.ico'
 
 const Details = ({ details }) => {
   return (
     <>
       <Image
-        src={details.Poster}
-        alt={`a poster for ${details.Title}`}
+        src={details.Poster === "N/A" ? favicon : details.Poster}
+        alt={
+          details.Poster === "N/A"
+            ? "text: no image available"
+            : `a poster for ${details.Title}`
+        }
         width={150}
         height={225}
         priority

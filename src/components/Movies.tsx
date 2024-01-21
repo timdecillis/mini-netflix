@@ -5,19 +5,26 @@ import { fetchMovies } from "../../lib/helpers";
 
 interface Movie {
   Title: string;
-  imdbId: string;
+  imdbID: string;
   Poster: string;
 }
 
-const Movies = async ({term = 'terminator'}) => {
+interface MoviesProps {
+  term: string;
+}
 
+const Movies = async ({ term }: MoviesProps) => {
   const movies: Movie[] = await fetchMovies(term);
 
   return (
     <>
-      {movies.map((movie: Movie) => (
-        <MovieCard key={movie.imdbId} movie={movie} />
-      ))}
+      {movies.length ? (
+        movies.map((movie: Movie) => (
+          <MovieCard key={movie.imdbID} movie={movie} />
+        ))
+      ) : (
+        <h2>Your search did not return any results :(</h2>
+      )}
     </>
   );
 };
