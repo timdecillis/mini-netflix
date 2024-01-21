@@ -12,6 +12,20 @@ body {
   font-size: x-large;
 }
 
+.movie-card {
+  color: black;
+  border-style: solid;
+  border-width: .1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  text-align: center;
+  height: 91.5%;
+  width: 88%;
+}
+
 .movies {
   padding-top: 2%;
   display: grid;
