@@ -109,7 +109,7 @@ a {
 body {
   padding: 1rem;
   color: white;
-  background-color: #f14e4c;
+  background-color: black
 }
 
 .header {
@@ -117,12 +117,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-left: 4%;
-  padding-bottom: 2%;
-  position: relative;
   border-color: #f2e7c9;
   border-bottom-style: solid;
-  border-bottom-width: .1rem;
+  border-bottom-width: 0.1rem;
   margin-bottom: 1rem;
+  min-height: 8rem;
+  background-color: #f14e4c;
+  padding-right: 2%;
 }
 
 .header-greeting {
@@ -133,11 +134,12 @@ body {
 }
 
 .home-button {
-  font-size: x-large;
+  font-size: large;
   color: white;
 }
 
 .logo-image {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 2%
 }

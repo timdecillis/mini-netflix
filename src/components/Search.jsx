@@ -18,7 +18,12 @@ const Search = () => {
         type="text"
         placeholder="Search..."
       />
-      <input className="search-submit" disabled={!input} type="submit" />
+      <input
+        value="Go!"
+        className="search-submit"
+        disabled={!input}
+        type="submit"
+      />
     </form>
   );
 };

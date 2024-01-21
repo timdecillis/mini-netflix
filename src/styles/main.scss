@@ -44,6 +44,16 @@
 }
 
 .search-submit {
+  color: #f14e4c;
   width: 5%;
   min-width: 5rem;
+  background-color: #f2e7c9;
+  border: none;
+  margin-top: 0.2rem;
+  min-height: 1.5rem;
+  font-weight: bolder;
+
+  &:disabled {
+    color: grey;
+  }
 }
