@@ -9,9 +9,10 @@ const Header = () => {
       <a className="home-button" href="/">
         Home
       </a>
-      <h1>Welcome to (mini)Netflix!</h1>
-      <a href='/' className="header-logo">
-        <Image src={logo} alt="the mini netflix logo"></Image>
+      <h1 className="header-greeting" >Welcome to (mini)Netflix!</h1>
+      <div className="header-logo"  ></div>
+      <a href='/' >
+        <Image className="logo-image" src={logo} alt="the mini netflix logo"></Image>
       </a>
     </header>
   );

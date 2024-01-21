@@ -7,11 +7,23 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-left: 4%;
-  padding-right: 2%;
+  position: relative; /* Add position relative to the header */
+}
+
+.header-greeting {
+  position: absolute; /* Position the greeting absolutely */
+  left: 50%; /* Move the greeting to the center horizontally */
+  transform: translateX(-50%); /* Adjust the position to center it perfectly */
+  text-align: center;
 }
 
 .home-button {
   font-size: x-large;
+}
+
+.logo-image {
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .movie-card {
