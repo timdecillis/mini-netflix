@@ -4,7 +4,7 @@ import favicon from '../app/favicon.ico'
 
 const Details = ({ details }) => {
   return (
-    <>
+    <div className="details" >
       <Image
         src={details.Poster === "N/A" ? favicon : details.Poster}
         alt={
@@ -22,7 +22,7 @@ const Details = ({ details }) => {
       <h3>Runtime: {details.Runtime}</h3>
       <h5>Written by: {details.Writer}</h5>
       <p>{details.Plot}</p>
-    </>
+    </div>
   );
 };
 

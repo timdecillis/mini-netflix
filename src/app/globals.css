@@ -105,3 +105,33 @@ a {
     color-scheme: dark;
   }
 } */
+
+body {
+  padding: 1rem;
+  color: white;
+  background-color: rgb(189, 82, 127);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4%;
+  position: relative;
+}
+
+.header-greeting {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.home-button {
+  font-size: x-large;
+}
+
+.logo-image {
+  max-width: 200px;
+  max-height: 200px;
+}
