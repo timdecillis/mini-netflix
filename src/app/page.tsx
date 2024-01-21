@@ -4,7 +4,6 @@ import Movies from "../components/Movies";
 export default function Home() {
   return (
     <>
-      <h1>Welcome to (mini)Netflix</h1>
       <Movies term="terminator" />
     </>
 
