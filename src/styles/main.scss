@@ -24,7 +24,7 @@ body {
   justify-content: center;
   padding: 5%;
   text-align: center;
-  height: 91.5%;
+  height: 90.5%;
   width: 88%;
 }
 
@@ -44,6 +44,7 @@ body {
 .search-form {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .search-submit {
