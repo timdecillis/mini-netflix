@@ -2,12 +2,7 @@ import React from "react";
 
 import Details from "@/components/Details/Details";
 import { fetchDetails } from "@/lib/helpers";
-
-interface moviePageParams {
-  params: {
-    id: string;
-  };
-}
+import { moviePageParams } from "../../moviePageParams";
 
 const MoviePage = async ({ params }: moviePageParams) => {
   const { id } = params;
