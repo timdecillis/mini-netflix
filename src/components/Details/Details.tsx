@@ -2,8 +2,8 @@ import Image from "next/image";
 import React from "react";
 
 import { DetailsProps } from "./DetailsTypes";
-import favicon from "../app/favicon.ico";
-import "../styles/main.scss";
+import favicon from "@/app/favicon.ico";
+import "@/styles/main.scss";
 
 const Details = ({ details }: DetailsProps) => {
   return (

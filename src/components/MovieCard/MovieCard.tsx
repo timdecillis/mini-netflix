@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import { MovieCardProps } from "./MovieCard/MovieCardTypes";
-import "../styles/main.scss";
-import favicon from "../app/favicon.ico";
+import { MovieCardProps } from "./MovieCardTypes";
+import "@/styles/main.scss";
+import favicon from "@/app/favicon.ico";
 
 const MovieCard = ({ movie }: MovieCardProps) => {
   return (

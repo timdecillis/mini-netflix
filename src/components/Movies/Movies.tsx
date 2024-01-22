@@ -1,8 +1,8 @@
 import React from "react";
 
 import { MoviesProps } from "./MoviesTypes";
-import MovieCard from "../MovieCard";
-import { fetchMovies } from "../../../lib/helpers";
+import MovieCard from "../MovieCard/MovieCard";
+import { fetchMovies } from "@/lib/helpers";
 
 interface Movie {
   Title: string;

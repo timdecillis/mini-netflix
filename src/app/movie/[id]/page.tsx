@@ -1,7 +1,7 @@
 import React from "react";
 
-import Details from '../../../components/Details';
-import { fetchDetails } from "../../../../lib/helpers";
+import Details from '@/components/Details/Details';
+import { fetchDetails } from '@/lib/helpers';
 
 interface MovieProps {
   params: {
