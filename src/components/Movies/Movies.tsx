@@ -3,6 +3,7 @@ import React from "react";
 import { MoviesProps } from "./MoviesTypes";
 import MovieCard from "../MovieCard/MovieCard";
 import { fetchMovies } from "@/lib/helpers";
+import styles from './Movies.module.scss';
 
 interface Movie {
   Title: string;
@@ -14,7 +15,7 @@ const Movies = async ({ term }: MoviesProps) => {
   const movies: Movie[] = await fetchMovies(term);
 
   return (
-    <div className="movies" >
+    <div className={styles.movies} >
       {movies.length ? (
         movies.map((movie: Movie) => (
           <MovieCard key={movie.imdbID} movie={movie} />

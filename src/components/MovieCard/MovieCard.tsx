@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 
 import { MovieCardProps } from "./MovieCardTypes";
-import "@/styles/main.scss";
 import favicon from "@/app/favicon.ico";
 import styles from './MovieCard.module.scss';
 

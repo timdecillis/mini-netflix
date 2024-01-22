@@ -106,48 +106,10 @@ a {
   }
 } */
 
-@import '@/app/variables';
+@import "@/app/variables";
 
 body {
   padding: 1rem;
   color: white;
   background-color: black;
-}
-
-.search-input {
-  height: 1.5rem;
-  width: 20%;
-  border-width: 0.1rem;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  outline: none;
-}
-
-.search-form {
-  font-size: large;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.search-submit {
-  color: $red;
-  width: 5%;
-  min-width: 5rem;
-  background-color: $tan;
-  border: none;
-  margin-top: 0.2rem;
-  min-height: 1.5rem;
-  font-weight: bolder;
-
-  &:disabled {
-    color: grey;
-  }
-}
-
-.movies {
-  padding-top: 2%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }

@@ -1,4 +1,3 @@
-import "../styles/main.scss";
 import Movies from "../components/Movies/Movies";
 
 export default function Home() {
