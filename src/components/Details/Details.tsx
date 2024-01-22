@@ -1,19 +1,9 @@
 import Image from "next/image";
 import React from "react";
+
+import { DetailsProps } from "./DetailsTypes";
 import favicon from "../app/favicon.ico";
 import "../styles/main.scss";
-
-interface DetailsProps {
-  details: {
-    Poster: string;
-    Title: string;
-    Year: string;
-    Rated: string;
-    Runtime: string;
-    Writer: string;
-    Plot: string;
-  }
-}
 
 const Details = ({ details }: DetailsProps) => {
   return (
