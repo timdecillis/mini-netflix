@@ -1,10 +1,20 @@
 import React from "react";
 import Image from "next/image";
-import '../styles/main.scss';
 
+import '../styles/main.scss';
 import favicon from "../app/favicon.ico";
 
-const MovieCard = ({ movie }) => {
+export interface MovieCardProps {
+  movie: {
+    Title: string;
+    imdbID: string;
+    Poster: string;
+  }
+}
+
+
+
+const MovieCard = ({ movie }: MovieCardProps) => {
   return (
     <a
       className="movie-card"
