@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { MovieCardProps } from "./MovieCardTypes";
 import favicon from "@/app/favicon.ico";
@@ -7,7 +8,7 @@ import styles from './MovieCard.module.scss';
 
 const MovieCard = ({ movie }: MovieCardProps) => {
   return (
-    <a
+    <Link
       className={styles['movie-card']}
       key={movie.imdbID}
       href={`/movie/${movie.imdbID}`}
@@ -24,7 +25,7 @@ const MovieCard = ({ movie }: MovieCardProps) => {
         priority
       ></Image>
       <h3>{movie.Title}</h3>
-    </a>
+    </Link>
   );
 };
 
