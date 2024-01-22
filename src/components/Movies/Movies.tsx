@@ -15,15 +15,15 @@ const Movies = async ({ term }: MoviesProps) => {
   const movies: Movie[] = await fetchMovies(term);
 
   return (
-    <div className={styles.movies} >
+    <section className={styles.movies} >
       {movies.length ? (
         movies.map((movie: Movie) => (
           <MovieCard key={movie.imdbID} movie={movie} />
         ))
       ) : (
-        <h2>Your search did not return any results :(</h2>
+        <h1>Your search did not return any results :(</h1>
       )}
-    </div>
+    </section>
   );
 };
 
