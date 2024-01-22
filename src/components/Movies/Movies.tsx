@@ -1,16 +1,13 @@
 import React from "react";
 
-import MovieCard from "./MovieCard";
-import { fetchMovies } from "../../lib/helpers";
+import { MoviesProps } from "./MoviesTypes";
+import MovieCard from "../MovieCard";
+import { fetchMovies } from "../../../lib/helpers";
 
 interface Movie {
   Title: string;
   imdbID: string;
   Poster: string;
-}
-
-interface MoviesProps {
-  term: string;
 }
 
 const Movies = async ({ term }: MoviesProps) => {
