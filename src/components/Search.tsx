@@ -1,12 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { SyntheticEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const Search = () => {
   const [input, setInput] = useState("");
   const router = useRouter();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
     router.push(`/search/${input}`);
   };
