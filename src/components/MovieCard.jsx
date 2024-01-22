@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import '../styles/main.scss';
 
 import favicon from "../app/favicon.ico";
 
