@@ -3,12 +3,12 @@ import React from "react";
 
 import { DetailsProps } from "./DetailsTypes";
 import favicon from "@/app/favicon.ico";
-import "@/styles/main.scss";
+import styles from './Details.module.scss'
 
 const Details = ({ details }: DetailsProps) => {
   return (
-    <div className="details">
-      <div className="details-top">
+    <div className={styles.details}>
+      <div className={styles['details-top']}>
         <div>
           <Image
             src={details.Poster === "N/A" ? favicon : details.Poster}
@@ -22,7 +22,7 @@ const Details = ({ details }: DetailsProps) => {
             priority
           ></Image>
         </div>
-        <div className="details-info">
+        <div className={styles['details-info']}>
           <h3>{details.Title}</h3>
           <h5>Year: {details.Year}</h5>
           <h5>Rating: {details.Rated}</h5>

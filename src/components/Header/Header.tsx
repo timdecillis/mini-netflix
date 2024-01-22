@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import logo from "../app/logo1.png";
+import logo from "@/app/logo1.png";
 
 const Header = () => {
   return (

@@ -1,15 +1,12 @@
 import React from "react";
 
+import { movieProps } from "../movieProps";
 import Details from '@/components/Details/Details';
 import { fetchDetails } from '@/lib/helpers';
 
-interface MovieProps {
-  params: {
-    id: string;
-  };
-}
 
-const Movie = async ({ params }: MovieProps) => {
+
+const Movie = async ({ params }: movieProps) => {
   const { id } = params;
   const details = await fetchDetails(id);
 

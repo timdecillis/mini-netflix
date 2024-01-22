@@ -106,6 +106,9 @@ a {
   }
 } */
 
+$red: #f14e4c;
+$tan: #f2e7c9;
+
 body {
   padding: 1rem;
   color: white;
@@ -119,7 +122,7 @@ body {
   padding-left: 4%;
   margin-bottom: 1rem;
   min-height: 8rem;
-  background-color: #f14e4c;
+  background-color: $red;
   padding-right: 2%;
 }
 
@@ -145,7 +148,6 @@ body {
   height: 1.5rem;
   width: 20%;
   border-width: 0.1rem;
-  border-color: black;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -160,10 +162,10 @@ body {
 }
 
 .search-submit {
-  color: #f14e4c;
+  color: $red;
   width: 5%;
   min-width: 5rem;
-  background-color: #f2e7c9;
+  background-color: $tan;
   border: none;
   margin-top: 0.2rem;
   min-height: 1.5rem;

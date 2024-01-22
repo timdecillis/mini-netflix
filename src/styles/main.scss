@@ -1,17 +1,4 @@
-.details {
-  padding-top: 2%;
-}
-
-.details-top {
-  display: flex;
-  align-items: center;
-}
-
-.details-info {
-  display: flex;
-  flex-direction: column;
-  margin-left: 3%;
-}
+@import '@/app/globals.scss';
 
 .movie-card {
   color: white;
@@ -26,7 +13,7 @@
   height: 90.5%;
   width: 88%;
   &:hover {
-    border-color: #f14e4c;
+    border-color:$red;
     background-color: rgba(241, 78, 76, 0.5);
   }
 }
