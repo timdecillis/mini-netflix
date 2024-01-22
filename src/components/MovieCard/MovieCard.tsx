@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
+import Link from "next/link";
 import { MovieCardProps } from "./MovieCardTypes";
 import favicon from "@/app/favicon.ico";
-import styles from './MovieCard.module.scss';
+import styles from "./MovieCard.module.scss";
 
 const MovieCard = ({ movie }: MovieCardProps) => {
   return (
     <Link
-      className={styles['movie-card']}
+      className={styles["movie-card"]}
       key={movie.imdbID}
-      href={`/movie/${movie.imdbID}`}
+      href={`/movie/details/${movie.imdbID}`}
     >
       <Image
         src={movie.Poster === "N/A" ? favicon : movie.Poster}

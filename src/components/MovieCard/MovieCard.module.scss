@@ -1,4 +1,4 @@
-@import '@/app/variables.scss';
+@import "@/app/variables.scss";
 
 .movie-card {
   color: white;
@@ -13,7 +13,7 @@
   height: 90.5%;
   width: 88%;
   &:hover {
-    border-color:$red;
+    border-color: $red;
     background-color: rgba(241, 78, 76, 0.5);
   }
 }
