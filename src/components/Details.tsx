@@ -3,7 +3,19 @@ import React from "react";
 import favicon from "../app/favicon.ico";
 import "../styles/main.scss";
 
-const Details = ({ details }) => {
+interface DetailsProps {
+  details: {
+    Poster: string;
+    Title: string;
+    Year: string;
+    Rated: string;
+    Runtime: string;
+    Writer: string;
+    Plot: string;
+  }
+}
+
+const Details = ({ details }: DetailsProps) => {
   return (
     <div className="details">
       <div className="details-top">
