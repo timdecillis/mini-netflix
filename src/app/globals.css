@@ -109,7 +109,7 @@ a {
 body {
   padding: 1rem;
   color: white;
-  background-color: black
+  background-color: black;
 }
 
 .header {
@@ -117,9 +117,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-left: 4%;
-  border-color: #f2e7c9;
-  border-bottom-style: solid;
-  border-bottom-width: 0.1rem;
   margin-bottom: 1rem;
   min-height: 8rem;
   background-color: #f14e4c;
@@ -142,4 +139,43 @@ body {
   max-width: 100px;
   max-height: 100px;
   border-radius: 2%
+}
+
+.search-input {
+  height: 1.5rem;
+  width: 20%;
+  border-width: 0.1rem;
+  border-color: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+.search-form {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.search-submit {
+  color: #f14e4c;
+  width: 5%;
+  min-width: 5rem;
+  background-color: #f2e7c9;
+  border: none;
+  margin-top: 0.2rem;
+  min-height: 1.5rem;
+  font-weight: bolder;
+
+  &:disabled {
+    color: grey;
+  }
+}
+
+.movies {
+  padding-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }

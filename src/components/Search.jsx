@@ -19,7 +19,7 @@ const Search = () => {
         placeholder="Search..."
       />
       <input
-        value="Go!"
+        value="Submit"
         className="search-submit"
         disabled={!input}
         type="submit"
