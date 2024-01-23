@@ -11,6 +11,7 @@ const Search = () => {
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
     router.push(`/search/${input}`);
+    setInput('');
   };
 
   return (
@@ -20,6 +21,7 @@ const Search = () => {
         onChange={(e) => setInput(e.target.value)}
         type="text"
         placeholder="Search..."
+        value={input}
       />
       <input
         value="Submit"
