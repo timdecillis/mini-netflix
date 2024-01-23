@@ -1,7 +1,5 @@
+import { movieSearch } from "@/lib/omdbTypes";
+
 export interface MovieCardProps {
-  movie: {
-    Title: string;
-    imdbID: string;
-    Poster: string;
-  };
+  movie: movieSearch;
 }

@@ -1,13 +1,11 @@
 import React from "react";
 import Movies from "@/components/Movies/Movies";
 
-interface ResultsProps {
-  params: { term: string };
-}
+import { resultsPageProps } from "./resultsPageProps";
 
-const Results = ({ params }: ResultsProps) => {
+const ResultsPage = ({ params }: resultsPageProps) => {
   const { term } = params;
   return <Movies term={term} />;
 };
 
-export default Results;
+export default ResultsPage;
