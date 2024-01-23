@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "@/app/logo1.png";
+import logo from "@/assets/logo1.png";
 import styles from "./Header.module.scss";
 
 const Header = () => {

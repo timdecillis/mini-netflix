@@ -1,11 +1,16 @@
 import Image from "next/image";
 import React from "react";
+import { Metadata } from "next";
 
 import { DetailsProps } from "./DetailsTypes";
 import favicon from "@/app/favicon.ico";
 import styles from "./Details.module.scss";
 
 const Details = ({ details }: DetailsProps) => {
+  const metadata: Metadata = {
+    title: `${details.Title}`,
+  };
+
   return (
     <section className={styles.details}>
       <section className={styles["details-top"]}>

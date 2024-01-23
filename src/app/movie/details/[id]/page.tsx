@@ -1,4 +1,9 @@
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Movie Details",
+};
 
 import Details from "@/components/Details/Details";
 import { fetchDetails } from "@/lib/helpers";
