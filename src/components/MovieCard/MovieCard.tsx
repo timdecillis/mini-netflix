@@ -20,8 +20,9 @@ const MovieCard = ({ movie }: MovieCardProps) => {
             ? "text: no image available"
             : `a poster for ${movie.Title}`
         }
-        width={150}
-        height={225}
+        width={30}
+        height={50}
+        layout="responsive"
         priority
       ></Image>
       <h3>{movie.Title}</h3>
