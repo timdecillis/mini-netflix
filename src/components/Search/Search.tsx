@@ -12,6 +12,7 @@ const Search = () => {
     e.preventDefault();
     router.push(`/search/${input}`);
   };
+
   return (
     <form className={styles["search-form"]} onSubmit={handleSubmit}>
       <input
