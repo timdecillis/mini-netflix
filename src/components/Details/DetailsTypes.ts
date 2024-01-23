@@ -1,11 +1,5 @@
+import { details } from "@/lib/omdbTypes";
+
 export interface DetailsProps {
-  details: {
-    Poster: string;
-    Title: string;
-    Year: string;
-    Rated: string;
-    Runtime: string;
-    Writer: string;
-    Plot: string;
-  };
+  details: details;
 }
