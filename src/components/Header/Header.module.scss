@@ -9,13 +9,19 @@
   min-height: 8rem;
   background-color: $red;
   padding-right: 2%;
-}
 
-.header-greeting {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
+  .header-greeting {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .header-greeting {
+      display: none;
+    }
+  }
 }
 
 .home-button {
