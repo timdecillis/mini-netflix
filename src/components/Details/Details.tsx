@@ -11,8 +11,6 @@ const Details = ({ details }: DetailsProps) => {
     title: `${details.Title}`,
   };
 
-  // adding comment
-
   return (
     <section className={styles.details}>
       <section className={styles["details-top"]}>
