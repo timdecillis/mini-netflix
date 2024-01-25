@@ -1,23 +1,18 @@
 import React from "react";
 
 import { MoviesProps } from "./MoviesTypes";
+import { movieSearch } from "@/lib/omdbTypes";
 import MovieCard from "../MovieCard/MovieCard";
 import { fetchMovies } from "@/lib/helpers";
 import styles from "./Movies.module.scss";
 
-interface Movie {
-  Title: string;
-  imdbID: string;
-  Poster: string;
-}
-
 const Movies = async ({ term }: MoviesProps) => {
-  const movies: Movie[] = await fetchMovies(term);
+  const movies: movieSearch[] = await fetchMovies(term);
 
   return (
     <section className={styles.movies}>
       {movies.length ? (
-        movies.map((movie: Movie) => (
+        movies.map((movie: movieSearch) => (
           <MovieCard key={movie.imdbID} movie={movie} />
         ))
       ) : (
