@@ -1,6 +1,10 @@
 import React from "react";
 import { Metadata, ResolvingMetadata } from "next";
 
+import Details from "@/components/Details/Details";
+import { fetchDetails } from "@/lib/helpers";
+import { moviePageParams } from "../../moviePageParams";
+
 export async function generateMetadata(
   { params }: moviePageParams,
   parent: ResolvingMetadata
@@ -10,13 +14,9 @@ export async function generateMetadata(
   const details = await fetchDetails(id);
 
   return {
-    title: details.Title,
+    title: `Details: ${details.Title}`,
   };
 }
-
-import Details from "@/components/Details/Details";
-import { fetchDetails } from "@/lib/helpers";
-import { moviePageParams } from "../../moviePageParams";
 
 const detailsPage = async ({ params }: moviePageParams) => {
   const { id } = params;
