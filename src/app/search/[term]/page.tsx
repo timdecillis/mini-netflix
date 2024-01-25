@@ -3,9 +3,9 @@ import Movies from "@/components/Movies/Movies";
 
 import { resultsPageProps } from "./resultsPageProps";
 
-const ResultsPage = ({ params }: resultsPageProps) => {
+const searchPage = ({ params }: resultsPageProps) => {
   const { term } = params;
   return <Movies term={term} />;
 };
 
-export default ResultsPage;
+export default searchPage;
