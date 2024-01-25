@@ -2,7 +2,7 @@
 import React, { SyntheticEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import styles from './Search.module.scss';
+import styles from "./Search.module.scss";
 
 const Search = () => {
   const [input, setInput] = useState("");
@@ -11,7 +11,7 @@ const Search = () => {
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
     router.push(`/search/${input}`);
-    setInput('');
+    setInput("");
   };
 
   return (

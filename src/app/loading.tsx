@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import spinner from '@/assets/spinner.svg';
+import spinner from "@/assets/spinner.svg";
 
 import styles from "@/styles/loadingStyles.module.scss";
 
