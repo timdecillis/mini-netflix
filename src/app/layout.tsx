@@ -5,7 +5,7 @@ import Search from "@/components/Search/Search";
 import "@/styles/globals.scss";
 
 export const metadata: Metadata = {
-  title: "Mini Netflix",
+  title: "Mini IMDb",
   description: "Coding assessment for XCentium",
 };
 

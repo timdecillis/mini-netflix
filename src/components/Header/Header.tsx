@@ -11,7 +11,7 @@ const Header = () => {
       <Link className={styles["home-button"]} href="/">
         Home
       </Link>
-      <h1 className={styles["header-greeting"]}>Welcome to (mini)Netflix!</h1>
+      <h1 className={styles["header-greeting"]}>Welcome to (mini) IMDb!</h1>
       <Link href="/">
         <Image
           className={styles["logo-image"]}
