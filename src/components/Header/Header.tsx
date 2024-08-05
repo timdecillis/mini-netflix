@@ -8,8 +8,8 @@ import styles from "./Header.module.scss";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles["home-button"]}>
-        <Link className={styles["home-button"]} href="/">
+      <div className={styles["home-buttons"]}>
+        <Link className={styles["home-buttons"]} href="/">
           Home
         </Link>
         <Link href="/account">Account</Link>
