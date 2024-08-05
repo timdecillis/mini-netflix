@@ -9,10 +9,12 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles["home-buttons"]}>
-        <Link className={styles["home-buttons"]} href="/">
+        <Link className={styles["header-button"]} href="/">
           Home
         </Link>
-        <Link href="/account">Account</Link>
+        <Link className={styles["header-button"]} href="/account">
+          Account
+        </Link>
       </div>
       <h1 className={styles["header-greeting"]}>Welcome to (mini) IMDb!</h1>
       <Link href="/">
