@@ -1,7 +1,14 @@
-import React from "react";
+import db from "../../../utils/db";
 import Link from "next/link";
 
-const accountPage = () => {
+const getData = async () => {
+  const users = await db.user.findMany({})
+  return users
+}
+
+const accountPage = async () => {
+  const users = await getData()
+  console.log('USERS:', users)
   return (
     <div>
       <h3>This is your account info</h3>
