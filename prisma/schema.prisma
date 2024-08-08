@@ -8,7 +8,6 @@ datasource db {
 }
 
 model User {
-  id String @default(uuid())
+  id String @id @default(uuid())
   name String
-  favorites String[]
 }
