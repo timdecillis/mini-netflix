@@ -1,8 +1,11 @@
+import { useState } from "react";
+
 const Update = () => {
+  const [name, setName] = useState("");
   return (
     <form>
-      <input type='text'></input>
-      <input type='submit'></input>
+      <input onChange={(e) => setName(e.target.value)} type="text"></input>
+      <input type="submit"></input>
     </form>
   );
 };

@@ -4,7 +4,7 @@ import Link from "next/link";
 const accountPage = () => {
   return (
     <div>
-      <h3>Account</h3>
+      <h3>This is your account info</h3>
       <Link href="/account/update">Update your account</Link>
     </div>
   );
