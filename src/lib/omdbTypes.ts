@@ -6,6 +6,7 @@ export interface movieSearch {
 }
 
 export interface details {
+  Director: string
   Title: string;
   Year: string;
   imdbID: string;

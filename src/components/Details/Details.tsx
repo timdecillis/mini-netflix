@@ -27,7 +27,7 @@ const Details = ({ details }: DetailsProps) => {
         ></Image>
 
         <section className={styles["details-info"]}>
-          <h3>{details.Title}</h3>
+          <h3>{details.Director}&apos;s {details.Title}</h3>
           <h5>Year: {details.Year}</h5>
           <h5>Rating: {details.Rated}</h5>
           <h5>Runtime: {details.Runtime}</h5>
