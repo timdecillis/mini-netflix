@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 
-const Update = () => {
+const Update = ({ saveName }) => {
   const [name, setName] = useState("");
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     console.log("submitting:", name);
+    saveName(name)
   };
   return (
     <form onSubmit={handleSubmit}>

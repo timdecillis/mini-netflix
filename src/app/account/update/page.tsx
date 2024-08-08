@@ -1,7 +1,11 @@
-import Update from "@/components/Account/Update/Update"
+import Update from "@/components/Account/Update/Update";
 
 const update = () => {
-  return <Update/>;
+  const saveName = async (name: string) => {
+    "use server"
+    console.log("nameeee:", name);
+  };
+  return <Update saveName={saveName} />;
 };
 
 export default update;
