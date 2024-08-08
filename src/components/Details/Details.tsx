@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Metadata } from "next";
 
-import { DetailsProps } from "./DetailsTypes";
+import { DetailsProps } from "@/lib/omdbTypes";
 import favicon from "@/app/favicon.ico";
 import styles from "./Details.module.scss";
 
