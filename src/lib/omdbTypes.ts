@@ -1,4 +1,4 @@
-export interface movieSearch {
+export interface MovieSearchProps {
   Title: string;
   Year: string;
   imdbID: string;
