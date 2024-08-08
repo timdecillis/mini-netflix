@@ -1,6 +1,6 @@
-import { movieSearch, details } from "./omdbTypes";
+import { MovieSearchProps, DetailsProps } from "./omdbTypes";
 
-export const fetchMovies = async (term: string): Promise<movieSearch[]> => {
+export const fetchMovies = async (term: string): Promise<MovieSearchProps[]> => {
   const key = process.env.API_KEY;
 
   const res = await fetch(`http://www.omdbapi.com/?s=${term}&apikey=${key}`);
@@ -11,7 +11,7 @@ export const fetchMovies = async (term: string): Promise<movieSearch[]> => {
   }
   return data.Search || [];
 };
-export const fetchDetails = async (id: string): Promise<details> => {
+export const fetchDetails = async (id: string): Promise<DetailsProps> => {
   const key = process.env.API_KEY;
 
   const res = await fetch(

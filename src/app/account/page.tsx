@@ -8,7 +8,6 @@ const getData = async () => {
 
 const accountPage = async () => {
   const users = await getData()
-  console.log('USERS:', users)
   return (
     <div>
       <h3>This is your account info</h3>
