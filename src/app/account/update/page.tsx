@@ -1,5 +1,7 @@
+import Update from "@/components/Account/Update/Update"
+
 const update = () => {
-  return <div>update your account</div>;
+  return <Update/>;
 };
 
 export default update;
