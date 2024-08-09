@@ -10,7 +10,8 @@ const accountPage = async () => {
   const users = await getData()
   return (
     <div>
-      <h3>This is your account info</h3>
+      <h3>These are all the users</h3>
+      {users.map((user, i) => <div key={i}>{user.name}</div>)}
       <Link href="/account/update">Update your account</Link>
     </div>
   );

@@ -5,7 +5,6 @@ import { revalidatePath } from "next/cache";
 const update = () => {
   const saveName = async (name: string) => {
     "use server";
-    console.log("nameeee:", name);
     try {
       await db.user.create({
         data: {
