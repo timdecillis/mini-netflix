@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { SyntheticEvent, useState } from "react";
 
-const Update = ({ saveName }) => {
+const Update = ({ saveName }: {saveName: (name: string) => void}) => {
   const [name, setName] = useState("");
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
     console.log("submitting:", name);
-    saveName(name)
+    saveName(name);
   };
   return (
     <form onSubmit={handleSubmit}>
