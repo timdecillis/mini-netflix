@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import Update from "./Update/Update";
+import { User } from "@/app/account/page";
 
 type AccountProps = {
   saveName: (name: string) => void;
-  users: { id: string; name: string }[];
+  users: User[];
 };
 
 const Account = ({ saveName, users }: AccountProps) => {

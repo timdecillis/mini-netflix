@@ -1,12 +1,16 @@
 import Account from "@/components/Account/Account";
 import db from "@/utils/db";
 import { revalidatePath } from "next/cache";
-import Link from "next/link";
+
+export type User = {
+  id: string;
+  name: string;
+};
 
 const getData = async () => {
-  const users = await db.user.findMany({})
-  return users
-}
+  const users = await db.user.findMany({});
+  return users;
+};
 
 const saveName = async (name: string) => {
   "use server";
@@ -16,17 +20,17 @@ const saveName = async (name: string) => {
         name,
       },
     });
-    revalidatePath('/account/update')
+    revalidatePath("/account/update");
   } catch (err) {
     console.error(`There was an error saving to the database: ${err}`);
   }
 };
 
 const accountPage = async () => {
-  const users = await getData()
+  const users = await getData();
   return (
     <div>
-      <Account saveName={saveName} users={users}/>
+      <Account saveName={saveName} users={users} />
     </div>
   );
 };
