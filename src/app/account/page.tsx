@@ -1,3 +1,4 @@
+import Account from "@/components/Account/Account";
 import db from "@/utils/db";
 import { revalidatePath } from "next/cache";
 import Link from "next/link";
@@ -25,8 +26,7 @@ const accountPage = async () => {
   const users = await getData()
   return (
     <div>
-      <h3>These are all the users</h3>
-      {users.map((user, i) => <div key={i}>{user.name}</div>)}
+      <Account saveName={saveName} users={users}/>
     </div>
   );
 };
