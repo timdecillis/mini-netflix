@@ -1,4 +1,4 @@
-import db from "../../../utils/db";
+import db from "@/utils/db";
 import Link from "next/link";
 
 const getData = async () => {

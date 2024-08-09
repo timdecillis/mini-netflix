@@ -1,4 +1,5 @@
 import Update from "@/components/Account/Update/Update";
+import db from "@/utils/db"
 
 const update = () => {
   const saveName = async (name: string) => {
