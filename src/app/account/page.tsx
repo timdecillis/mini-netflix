@@ -20,7 +20,7 @@ const saveName = async (name: string) => {
         name,
       },
     });
-    revalidatePath("/account/update");
+    revalidatePath("/account");
   } catch (err) {
     console.error(`There was an error saving to the database: ${err}`);
   }
