@@ -17,7 +17,7 @@ const Account = ({ saveName, users }: AccountProps) => {
       {updateOpen && <Update saveName={saveName} />}
       <h3>These are all the users</h3>
       {users.map((user, i) => (
-        <div key={i}>{user.name}</div>
+        <div key={i}>{i + 1}.) {user.name}</div>
       ))}
     </>
   );
