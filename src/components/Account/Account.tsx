@@ -17,12 +17,12 @@ const Account = ({ saveName, users }: AccountProps) => {
       {updateOpen && <Update saveName={saveName} />}
       <h3>These are all the users</h3>
       {users.map((user, i) => (
-        <>
-          <div key={i}>
+        <div key={i} style={{ display: "flex" }}>
+          <button>X</button>
+          <div>
             {i + 1}.) {user.name}
           </div>
-          <button>X</button>
-        </>
+        </div>
       ))}
     </>
   );
