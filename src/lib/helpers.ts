@@ -31,8 +31,7 @@ export const fetchDetails = async (id: string): Promise<DetailsProps> => {
 };
 
 export const getData = async () => {
-  const users = await db.user.findMany({});
-  return users;
+  return await db.user.findMany({});
 };
 
 export const saveName = async (name: string) => {
