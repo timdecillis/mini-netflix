@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Update from "./Update/Update";
 import { User } from "@/app/account/page";
-import { saveName } from "@/lib/helpers";
+import { deleteUser, saveName } from "@/lib/helpers";
 
 type AccountProps = {
   users: User[];
@@ -18,7 +18,7 @@ const Account = ({ users }: AccountProps) => {
       <h3>These are all the users</h3>
       {users.map((user, i) => (
         <div key={i} style={{ display: "flex" }}>
-          <button>X</button>
+          <button onClick={() => deleteUser(user.id)} >X</button>
           <div>
             {i + 1}.) {user.name}
           </div>

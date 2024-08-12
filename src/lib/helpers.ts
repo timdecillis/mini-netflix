@@ -47,3 +47,14 @@ export const saveName = async (name: string) => {
     console.error(`There was an error saving to the database: ${err}`);
   }
 };
+
+export const deleteUser = async (id: string) => {
+  try {
+    await db.user.delete({
+      where: { id },
+    });
+    revalidatePath("/account");
+  } catch (err) {
+    console.error(`There was an error deleting the user: ${err}`);
+  }
+};
