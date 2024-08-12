@@ -1,3 +1,4 @@
+"use server"
 import { revalidatePath } from "next/cache";
 import { MovieSearchProps, DetailsProps } from "./omdbTypes";
 import db from "@/utils/db";
@@ -35,7 +36,6 @@ export const getData = async () => {
 };
 
 export const saveName = async (name: string) => {
-  "use server";
   try {
     await db.user.create({
       data: {

@@ -3,13 +3,13 @@
 import { useState } from "react";
 import Update from "./Update/Update";
 import { User } from "@/app/account/page";
+import { saveName } from "@/lib/helpers";
 
 type AccountProps = {
-  saveName: (name: string) => void;
   users: User[];
 };
 
-const Account = ({ saveName, users }: AccountProps) => {
+const Account = ({ users }: AccountProps) => {
   const [updateOpen, setupdateOpen] = useState(false);
   return (
     <>
