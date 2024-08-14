@@ -1,5 +1,6 @@
 import Movies from "../components/Movies/Movies";
 
 export default function Home() {
-  return <Movies term="terminator" />;
+  const term = "terminator"
+  return <Movies term={term} />;
 }
