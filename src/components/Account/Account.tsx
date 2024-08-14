@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Update from "./Update/Update";
 import { User } from "@/app/account/page";
-import { deleteUser, saveName } from "@/lib/helpers";
+import { saveName } from "@/lib/helpers";
 import UserName from "../UserName/UserName";
 
 type AccountProps = {
