@@ -2,9 +2,14 @@
 
 import { useState } from "react";
 import Update from "./Update/Update";
-import { User } from "@/app/account/page";
 import { saveName } from "@/lib/helpers";
 import UserName from "../UserName/UserName";
+
+export type User = {
+  id: string;
+  name: string;
+};
+
 
 type AccountProps = {
   users: User[];
