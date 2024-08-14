@@ -36,7 +36,6 @@ export const getData = async () => {
 
 export const saveName = async (formData: FormData) => {
   try {
-    console.log('form data:', formData)
     await db.user.create({
       data: {
         name: formData.get('user-name') as string,
