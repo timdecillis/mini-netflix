@@ -1,7 +1,9 @@
 import { deleteUser } from "@/lib/helpers";
 import { useTransition } from "react";
 
-const UserName = ({ user }: { user: { id: string; name: string } }) => {
+type UserNameProps = { user: { id: string; name: string } };
+
+const UserName = ({ user }: UserNameProps) => {
   const [isPending, startTransition] = useTransition();
   return (
     <div style={{ display: "flex" }}>
