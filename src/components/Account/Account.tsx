@@ -10,7 +10,6 @@ export type User = {
   name: string;
 };
 
-
 type AccountProps = {
   users: User[];
 };
@@ -23,7 +22,7 @@ const Account = ({ users }: AccountProps) => {
       {updateOpen && <Update saveName={saveName} />}
       <h3>These are all the users</h3>
       {users.map((user, i) => (
-        <UserName key={i} user={user} />
+        <UserName key={i} user={user} index={i} />
       ))}
     </>
   );
