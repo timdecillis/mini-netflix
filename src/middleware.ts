@@ -1,4 +1,6 @@
-export const middleware = (request) => {
+import { NextRequest } from "next/server";
+
+export const middleware = (request: NextRequest) => {
   const pathname = request.nextUrl.pathname;
 
   if (!pathname.startsWith("/_next/")) {
