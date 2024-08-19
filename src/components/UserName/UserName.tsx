@@ -9,8 +9,8 @@ const UserName = ({ user, index }: UserNameProps) => {
     <div style={{ display: "flex" }}>
       <button onClick={() => startTransition(() => deleteUser(user.id))}>
         X
-      </button>{" "}
-      {`${index + 1}.)
+      </button>
+      {`${index + 1}.
       ${user.name}`}
     </div>
   );
